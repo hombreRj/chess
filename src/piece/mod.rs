@@ -10,7 +10,7 @@ pub struct ChessPiece {
 }
 
 impl ChessPiece {
-    pub fn _can_move(&self, x: u8, y: u8) -> bool {
+    pub fn can_move(&self, x: u8, y: u8) -> bool {
         if self.name == "King" {
             true
         } else if self.name == "Pawn" {

@@ -1,7 +1,7 @@
 pub mod piece;
 
 use piece::ChessPiece;
-
+//we
 fn main() {
     let pawn_one: ChessPiece = ChessPiece {
         name: String::from("Pawn"),
@@ -15,7 +15,7 @@ fn main() {
 
     println!("{:?}", pawn_one);
 
-    let result: bool = pawn_one._can_move(2, 1);
+    let result: bool = pawn_one.can_move(2, 1);
 
     println!("Can {:?} move to x=2 y=1 {result}", pawn_one)
 }
